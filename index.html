@@ -19,11 +19,100 @@
 
     <!-- Favicons -->
     <style>
-      p {
-        font-family: arizonia-regular;
+      body{
+  background: #3399ff;
+}
+
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
+      p class{
+        font-style: Italic Bold; 
+        font-weight: bold;
         font-size: large;
         text-shadow: 0cqb;
         text-emphasis-color: black;
+      }
+
+      h1 class{
+        font-style: italic; 
+        font-weight: bold;
+        font-size: large;
+        text-shadow: 0cqb;
+        text-emphasis-color: black; 
       }
 
       .bd-placeholder-img {
@@ -77,14 +166,27 @@
         -webkit-overflow-scrolling: touch;
       }
       a .card {
+        font-style: italic; 
+        font-weight: bold;
+        font-size: large;
+        text-shadow: 0cqb;
+        text-emphasis-color: black;
         color: rgb(14, 13, 13);
         text-decoration: none;
       }
-     
-      
-    </style>
 
-    
+      img.img-thumbnail {
+        position: absolute;
+        right: 990px; 
+        top: 75px;      
+        border-radius: 100px;
+        border: solid rgb(99, 5, 214) 4px;
+        padding: .1%;
+      }    
+      
+ 
+      </style>
+  
   </head>
   <body>
     
@@ -100,7 +202,7 @@
           <ul class="list-unstyled">
             <li><a href="#" class="text-white">Follow on Twitter</a></li>
             
-            <li><a href="#" class="text-white">Email me</a></li>
+            <li><a href="#" class="text-white"></a></li>
           </ul>
         </div>
       </div>
@@ -110,7 +212,7 @@
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Album</strong>
+        <strong></strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -124,12 +226,13 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <img src="IMG_7525.jpg" class="img-thumbnail" alt="picture of Rocky" height="200" width="200">
-        <h1 class="fw-light">MITxPro course</h1>
-        <p class="lead text-muted">Hi, my name is Rocky and I’m new to coding. I finding coding extremely challenging and rewarding at the same time. Here are two projects that we have worked on in the first ten weeks of the MITxPro course. The first one is a PacMan exercise where we had to get PacMac to move across the screen. The second one is called eye movement. We where asked to code the eyes to follow the mouse curser as you move the curser across the screen. There is also a short YouTube video introducing myself.</p>
+        <img src="IMG_7525.jpg" class="img-thumbnail" alt="picture of Rocky" height="160" width="175">
+        <h1 class="fw-light">Hi, my name is Rocky</h1>
+        <p class="lead text-muted">I’m new to coding. I finding coding extremely challenging and rewarding at the same time. Here are three projects that we have worked on in the first ten weeks of the MITxPro course. The first one is a PacMen exercise where we had to get PacMac to move across the screen. The second one is called eye movement. We were asked to code the eyes to follow the mouse curser as you move the curser across the screen. The third is an animation that track the stops a bus makes.</p>
         <p>
-          <a href="https://github.com/LockedNLoadedCoder" class="btn btn-primary my-2" target="_blank">My github profile</a>
-          <a href="https://github.com/LockedNLoadedCoder?tab=repositories" class="btn btn-primary my-2" target="_blank">My repostories</a>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0Tf26SPwz30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <a href="https://github.com/LockedNLoadedCoder" class="btn btn-success my-2" target="_blank">My github profile</a>
+          <a href="https://github.com/LockedNLoadedCoder?tab=repositories" class="btn btn-success my-2" target="_blank">My repostories</a>
         </p>
       </div>
     </div>
@@ -140,20 +243,21 @@
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
+          <a href="https://github.com/LockedNLoadedCoder/MIT-pacmen" class="btn btn-primary my-2" target="_blank">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <svg class="bd-placeholder-img card-img-top" width="75%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
             <div class="card-body">
-              <p class="card-text">MIT PacMan Exercise</p>
+              <p class="card-text">MIT Pacmen Exercise</p>
               <div class="d-flex justify-content-between align-items-center">
-              
-              </div>
+             </div>
             </div>
           </div>
+          </a>
         </div>
         <div class="col">
-          <a href="https://github.com/LockedNLoadedCoder/MIT-eye-exercise" target="_blank">
+          <a href="https://github.com/LockedNLoadedCoder/MIT-eye-exercise"class="btn btn-primary my-2" target="_blank">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <svg class="bd-placeholder-img card-img-top" width="75%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
             <div class="card-body">
               <p class="card-text">MIT Eyes Exercise</p>
             </div>
@@ -161,17 +265,19 @@
         </a>
         </div>
         <div class="col">
+          <a href="https://github.com/LockedNLoadedCoder/bus-tracker" class="btn btn-primary my-2" target="_blank">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <svg class="bd-placeholder-img card-img-top" width="75%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
             <div class="card-body">
-              <p class="card-text">YouTube Video</p>
+              <p class="card-text">MIT Bus-Tracker</p>
               <div class="d-flex justify-content-between align-items-center"></div>
           </div>
         </div>
+      </a>
       </div>
     </div>
   </div>
-
+  
 </main>
 
 <footer class="text-muted py-5">
